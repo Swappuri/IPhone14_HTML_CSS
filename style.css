@@ -158,6 +158,8 @@
   transition: opacity 0.2s ease-in-out;
 }
 
+/* || Phone Hover Effect */
+
 .phone {
   transition: 0.2s ease-in-out;
 }

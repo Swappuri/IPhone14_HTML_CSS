@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* || Essential */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* || Main Page Styling */
+
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEEEEE;
+}
+
+/* || Phone Components Styling */
+
+.phone {
+  position: relative;
+  height: 40rem;
+  width: 20rem;
+  background-color: transparent;
+}
+
+.phone-body, .black-lining, .wallpaper {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 40px;
+}
+
+.phone-body {
+  height: 40rem;
+  width: 20rem;;
+  background-color: #96a8b4;
+}
+
+.black-lining {
+  height: 39rem;
+  width: 19rem;
+  background-color: black;
+}
+
+.wallpaper {
+  height: 38rem;
+  width: 18rem;
+  background-color: #f46030;
+}
+
+.wallpaper-two {
+  height: 15rem;
+  width: 18rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, 27%);
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 80%;
+  background-color: #0b3452;
+}
+
+.wallpaper-three {
+  height: 24rem;
+  width: 18rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -79.5%);
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 90%;
+  border-bottom-left-radius: 0%;
+  background-color: #84d9dc;
+}
+
+.divot {
+  height: 2rem;
+  width: 7rem;
+  position: absolute;
+  top: 1.4%;
+  right: 50%;
+  transform: translate(50%, 0%);
+  background-color: black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.camera {
+  height: 1.2rem;
+  width: 1.2rem;
+  position: absolute;
+  top: 2.4%;
+  right: 61%;
+  transform: translate(50%, 0%);
+  border-radius: 50%;
+  border: 5px #0f0f0f solid;
+  background-color: #2c4586b1;
+}
+
+.button-one, .button-two, 
+.button-three, .button-four {
+  width: 0.3rem;
+  position: absolute;
+  transform: translate(50%, -50%);
+  background-color: #7f90a2;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.button-one {
+  height: 2rem;
+  top: 25%;
+  right: 100.5%;
+}
+
+.button-two {
+  height: 3rem;
+  top: 35%;
+  right: 100.5%;
+}
+
+.button-three {
+  height: 3rem;
+  top: 44%;
+  right: 100.5%;
+}
+
+.button-four {
+  height: 5rem;
+  top: 35%;
+  right: -0.7%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.author {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.phone {
+  transition: 0.2s ease-in-out;
+}
+
+.phone:hover{
+  transform: scale(1.05);
+}
+
+.phone:hover .author {
+  opacity: 1;
+}
